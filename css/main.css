@@ -122,7 +122,6 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   justify-content: space-between;
-  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
