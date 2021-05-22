@@ -1,0 +1,99 @@
+.button-primary {
+  padding: $btn-primary-padding;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: box-shadow $animation;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.subscribe-form__button-primary {
+  $btn-primary-padding: 10px 55px;
+  display: block;
+  padding: $btn-primary-padding;
+}
+
+.close-button {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+  background-color: transparent;
+
+  transition: fill $animation;
+
+  &:hover,
+  &:focus .close-button-icon {
+    fill: $accent-color;
+  }
+}
+
+.newsletter__btn {
+  display: flex;
+  align-items: center;
+
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-left: 12px;
+  $btn-primary-padding: 10px 28px;
+  padding: $btn-primary-padding;
+}
+
+.btn__icon {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+
+  fill: currentColor;
+}
+
+.button-secondary {
+  padding: $btn-secondary-padding;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: $title-text-color;
+  cursor: pointer;
+
+  border-color: transparent;
+  border-radius: 4px;
+  transition: color $animation, background-color $animation,
+    box-shadow $animation;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,41 @@
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.social-icons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  fill: $icon-color;
+  border-radius: 50%;
+
+  transition: background-color $animation, fill $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+
+    &:hover .social-icons__svg,
+    &:focus .social-icons__svg {
+      fill: $primary-white-color;
+    }
+  }
+}
+
+.social-icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons__link--color-inverse {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $primary-white-color;
+}

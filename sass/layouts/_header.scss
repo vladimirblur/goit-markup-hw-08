@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $primary-white-color;
+}
+
+.header__nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  // @extend %header-flex;
+}
