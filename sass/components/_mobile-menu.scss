@@ -93,13 +93,21 @@
 }
 
 .mobile-menu__mail {
-  font-size: 24px;
+  font-size: 20px;
   color: $primary-text-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-menu__tel {
-  font-size: 34px;
+  font-size: 30px;
   color: $accent-color;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__socials {
@@ -112,9 +120,11 @@
 
 .socials__link-mobile {
   display: block;
-  font-size: 18px;
-  line-height: 1.22;
+
   padding-right: 9px;
+
+  font-size: 16px;
+  line-height: 1.22;
 
   color: $accent-color;
 

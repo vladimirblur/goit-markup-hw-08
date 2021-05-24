@@ -26,7 +26,7 @@
 
   color: $title-text-color;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 768px) {
     max-width: 370px;
   }
 
@@ -132,28 +132,33 @@
 }
 
 .agreement__label {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-  flex-basis: 15px;
-
   &:focus-within .checkbox__icon {
     @extend %modal-focus;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .checkbox__icon {
   display: inline-block;
+  margin-right: 5px;
   box-sizing: border-box;
   width: 16px;
   height: 15px;
-  margin-right: 5px;
 
   border: solid 1.5px $title-text-color;
   border-radius: 2px;
 
   transition: background-color $animation, border-color $animation;
+
+  @media screen and (max-width: 480px) {
+    vertical-align: top;
+    margin-right: 3px;
+  }
 }
 
 .subscribe-form__checkbox {
@@ -181,7 +186,7 @@
   font-size: 12px;
   line-height: 1.17;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -193,7 +198,7 @@
 
   color: $accent-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     margin-left: 3px;
     font-size: 14px;
     line-height: 1.71;

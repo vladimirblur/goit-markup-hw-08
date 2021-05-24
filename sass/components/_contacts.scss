@@ -52,6 +52,16 @@
   fill: currentColor;
 }
 
+.contacts-list__mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+}
+.contacts-list__tel {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
+}
 .contacts__mail {
   @media screen and (min-width: 768px) {
     width: 14px;
