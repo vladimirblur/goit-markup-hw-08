@@ -42,10 +42,6 @@
 
   background-color: #f5f4fa;
   border-radius: 4px;
-
-  @media screen and (min-width: 1200px) {
-    // width: calc((100% - 4 * 30px) / 4);
-  }
 }
 
 .features__icon {
@@ -62,7 +58,7 @@
   text-transform: uppercase;
   color: $title-text-color;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }

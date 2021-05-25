@@ -1,9 +1,12 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 
   background-color: $footer-background-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__join {

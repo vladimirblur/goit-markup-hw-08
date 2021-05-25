@@ -48,6 +48,10 @@
     border-radius: 2px;
     background-color: $accent-color;
   }
+
+  @media screen and (max-width: 1199px) {
+    bottom: -2px;
+  }
 }
 
 .menu__link--border-width::after {
